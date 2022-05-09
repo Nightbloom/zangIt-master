@@ -1,0 +1,145 @@
+.main{
+    
+    display: flex;
+    padding: 0vw 2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imageContainer{
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   
+}
+
+.imageContainer img{
+    height: 25vw;
+    position: relative;
+    z-index: -1;
+    
+}
+
+
+
+.priceTag{
+    position: absolute;
+    top: 8px;
+    background-color: rgb(133, 238, 62);
+    width: 13vw;
+    height: 5.5vw;
+    right: 20vw;
+    font-family:'Caveat', cursive;
+    font-style: italic;
+    font-size: 3vw;
+
+}
+
+/* smallInfo */
+.smallInfo{
+    position: relative;
+    left: 2vw;
+    margin-top: 2vw;
+    font-family: 'Caveat', cursive;
+    
+}
+
+.info-header{
+    position: relative;
+    margin-bottom: 4vw;
+    font-size: .99rem;
+    bottom: 7vw;
+
+}
+
+.info{
+
+    position: relative;
+    bottom: 3vw;
+}
+
+.img1{
+    height: 5vw;
+    left: 2px;
+    position: relative;
+}
+.img2{
+    height: 3.5vw;
+}
+
+
+
+/* quantity div */
+
+.btn{
+    outline: none;
+    border: .1px solid #cdcdcd;
+    padding: 6px 3vw;
+}
+
+.quantity{
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.quantity-tag{
+    margin-bottom: 2vw;
+}
+
+.quantity button{
+    background-color: #eef5ee;
+    
+    
+
+}
+.quantity-button{
+    position: relative;
+    left: 1vw;
+    display: flex;
+    height: 8vw;
+    border: .1px solid #e7e3e3;
+}
+.quantity-button button{
+    height: 8vw;
+    font-size: 4vw;
+}
+
+.quantity-button strong{
+    position: relative;
+    left: -1.5vw;
+    top: 1.5vw;
+    width: 7vw;
+  }
+
+/* down arrow */
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    left: 50%;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  /* Paybutton */
+
+  .orderBtn1{
+    position: fixed;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  font-family: Expletus Sans;
+  font-weight: bold;
+  font-size: 20px;
+}

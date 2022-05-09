@@ -1,0 +1,124 @@
+.navbar1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13vw;
+  background: #acc927 35.52%;
+  padding: 0 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+.brand {
+  font-weight: 500;
+}
+
+.h1 {
+  text-decoration: none;
+  color: green;
+  left: 4vw;
+  position: absolute;
+  top: 3vw;
+  font-size: 5vw;
+}
+.h1:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.links-container {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.link:hover:not(.active) {
+  opacity: 0.7;
+}
+
+.link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 135%;
+  height: 1%;
+  background: grey;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+  /* toggle btn */
+  .toggle-btn {
+    position: absolute;
+    width: 5.5vw;
+    height: 7vw;
+    right: 23vh;
+    cursor: pointer;
+    top: 3vw;
+    z-index: 4;
+  }
+  .toggle-btn span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    top: 30%;
+    transition: 0.2s;
+  }
+  .toggle-btn span:nth-child(2) {
+    top: 50%;
+  }
+  .toggle-btn span:nth-child(3) {
+    top: 70%;
+  }
+  .toggle-btn.active span:nth-child(1) {
+    top: 50%;
+    background: #666665;
+    transform: rotate(45deg);
+  }
+  .toggle-btn.active span:nth-child(2) {
+    display: none;
+  }
+  .toggle-btn.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    background: #666665;
+  }
+  /* links */
+  .links-container {
+    position: absolute;
+    top: -3.5vw;
+    background: white;
+    right: 20vh;
+    padding-right: 14vw;
+    flex-direction: column;
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    padding-top: 3vw;
+  }
+  .links-container.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .link {
+    display: block;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+}

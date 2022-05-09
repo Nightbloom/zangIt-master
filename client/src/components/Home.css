@@ -1,0 +1,236 @@
+.header {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    180.29deg,
+    #acc927 35.52%,
+    rgba(172, 201, 39, 0.5) 76.56%
+  );
+  width: 100%;
+  height: 50vh;
+  clip-path: ellipse(52% 48vw at 50% 0%);
+}
+.zangHeading {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 15vw;
+  top: -3vw;
+  letter-spacing: 0.1em;
+  color: #e5e7dc;
+}
+.maskgroup {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+}
+.maskgroup1 {
+  position: absolute;
+  top: 28%;
+  left: 23%;
+}
+
+.maskgroup1 img {
+  height: 50vw;
+}
+
+.maskgroup2 {
+  position: absolute;
+  left: 12%;
+  top: 12%;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+}
+.maskgroup2 img {
+  height: 8vw;
+  margin: 3%;
+}
+.maskgroup3 {
+  position: absolute;
+  left: 63%;
+  top: 13%;
+}
+.maskgroup3 img {
+  height: 8vw;
+  margin: 3%;
+}
+
+.maskgroup4 {
+  position: absolute;
+  left: 42%;
+  top: 17%;
+}
+
+.maskgroup4 img {
+  height: 30vw;
+}
+
+.chilli {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  left: 8%;
+  top: 45%;
+  mix-blend-mode: darken;
+  transform: rotate(-1.23deg);
+}
+
+.chilli img {
+  height: 10vw;
+}
+
+.pepper {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+.pepper img {
+  height: 8vw;
+}
+
+.welcome {
+  /* width: 100%;
+     padding-top: 5vw; */
+  margin-top: 15vw;
+}
+.sub_heading {
+  font-family: Expletus Sans;
+  font-weight: bolder;
+  font-size: 29px;
+  line-height: 27px;
+  margin: 0px 8px;
+  text-align: center;
+}
+.welcome_content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+  padding: 20px;
+  padding-right: 10%;
+}
+/* .welcome_Section1 {
+    width: 35%;
+    border-radius: 20px;
+    height: 100%;
+    background: linear-gradient(
+      180.29deg,
+      #acc927 35.52%,
+      rgba(172, 201, 39, 0.5) 76.56%
+    );
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    margin-left: 5%;
+  } */
+.welcome_Section1 img {
+  padding: 15px;
+  margin-left: 4.5px;
+  margin-top: 5px;
+  max-height: 100%;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  height: 32vw;
+}
+.welcome_Section2 {
+  text-align: start;
+  width: 65%;
+  height: 100%;
+}
+.main_heading {
+  font-family: Expletus Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 27px;
+  text-shadow: #000000;
+}
+.sub_para {
+  font-family: Expletus Sans;
+  font-size: 3vw;
+  line-height: 4vw;
+  font-weight: normal;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
+}
+.wicon {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  height: 5%;
+  width: 17vw;
+  border-radius: 55px 0px 0px 55px;
+  background-color: black;
+}
+.wicon img {
+  padding: 3px;
+  height: 85%;
+}
+.footer {
+  width: 100%;
+  margin-top: 5%;
+}
+.heading3 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.footer_heading {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer_content {
+  color: green;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  line-height: 16px;
+
+  margin: 10px 10px 10px 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer_content_last {
+  color: green;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 10px 10px 10px 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.bike {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 45%;
+}
+.orderBtn {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 50px;
+  margin: 14px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  font-family: Expletus Sans;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
